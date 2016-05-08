@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059008001C09FDA0008D3920 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 059007FF1C09FDA0008D3920 /* main.m */; };
+		059008031C09FDA0008D3920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 059008021C09FDA0008D3920 /* AppDelegate.m */; };
+		059008091C09FDA0008D3920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059008071C09FDA0008D3920 /* Main.storyboard */; };
+		0590080B1C09FDA0008D3920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0590080A1C09FDA0008D3920 /* Assets.xcassets */; };
+		0590080E1C09FDA0008D3920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0590080C1C09FDA0008D3920 /* LaunchScreen.storyboard */; };
+		059008191C09FDA1008D3920 /* ZDCollectionViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 059008181C09FDA1008D3920 /* ZDCollectionViewSampleTests.m */; };
+		059008241C09FDA1008D3920 /* ZDCollectionViewSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 059008231C09FDA1008D3920 /* ZDCollectionViewSampleUITests.m */; };
+		05DA93EA1CDE051500DEE384 /* CircleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93DE1CDE051500DEE384 /* CircleCollectionViewController.m */; };
+		05DA93EB1CDE051500DEE384 /* LineCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93E01CDE051500DEE384 /* LineCollectionViewController.m */; };
+		05DA93EC1CDE051500DEE384 /* TagCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93E21CDE051500DEE384 /* TagCollectionViewController.m */; };
+		05DA93ED1CDE051500DEE384 /* ZDManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93E41CDE051500DEE384 /* ZDManagerController.m */; };
+		05DA93EE1CDE051500DEE384 /* CircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93E81CDE051500DEE384 /* CircleCell.m */; };
+		05DA93F41CDE057100DEE384 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93F11CDE057100DEE384 /* CircleLayout.m */; };
+		05DA93F51CDE057100DEE384 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93F31CDE057100DEE384 /* LineLayout.m */; };
+		05DA93F81CDE05C000DEE384 /* ZDWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */; };
+		05DA93FB1CDE05D900DEE384 /* ZDTagLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		059008151C09FDA1008D3920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 059007F31C09FDA0008D3920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059007FA1C09FDA0008D3920;
+			remoteInfo = ZDCollectionViewSample;
+		};
+		059008201C09FDA1008D3920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 059007F31C09FDA0008D3920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059007FA1C09FDA0008D3920;
+			remoteInfo = ZDCollectionViewSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		059007FB1C09FDA0008D3920 /* ZDCollectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZDCollectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		059007FF1C09FDA0008D3920 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		059008011C09FDA0008D3920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		059008021C09FDA0008D3920 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		059008081C09FDA0008D3920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0590080A1C09FDA0008D3920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0590080D1C09FDA0008D3920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0590080F1C09FDA0008D3920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059008141C09FDA1008D3920 /* ZDCollectionViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDCollectionViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		059008181C09FDA1008D3920 /* ZDCollectionViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDCollectionViewSampleTests.m; sourceTree = "<group>"; };
+		0590081A1C09FDA1008D3920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0590081F1C09FDA1008D3920 /* ZDCollectionViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDCollectionViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		059008231C09FDA1008D3920 /* ZDCollectionViewSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDCollectionViewSampleUITests.m; sourceTree = "<group>"; };
+		059008251C09FDA1008D3920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05DA93DD1CDE051500DEE384 /* CircleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCollectionViewController.h; sourceTree = "<group>"; };
+		05DA93DE1CDE051500DEE384 /* CircleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCollectionViewController.m; sourceTree = "<group>"; };
+		05DA93DF1CDE051500DEE384 /* LineCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewController.h; sourceTree = "<group>"; };
+		05DA93E01CDE051500DEE384 /* LineCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineCollectionViewController.m; sourceTree = "<group>"; };
+		05DA93E11CDE051500DEE384 /* TagCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCollectionViewController.h; sourceTree = "<group>"; };
+		05DA93E21CDE051500DEE384 /* TagCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCollectionViewController.m; sourceTree = "<group>"; };
+		05DA93E31CDE051500DEE384 /* ZDManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDManagerController.h; sourceTree = "<group>"; };
+		05DA93E41CDE051500DEE384 /* ZDManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDManagerController.m; sourceTree = "<group>"; };
+		05DA93E71CDE051500DEE384 /* CircleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCell.h; sourceTree = "<group>"; };
+		05DA93E81CDE051500DEE384 /* CircleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCell.m; sourceTree = "<group>"; };
+		05DA93F01CDE057100DEE384 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		05DA93F11CDE057100DEE384 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		05DA93F21CDE057100DEE384 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		05DA93F31CDE057100DEE384 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		05DA93F61CDE05C000DEE384 /* ZDWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDWaterFlowLayout.h; sourceTree = "<group>"; };
+		05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWaterFlowLayout.m; sourceTree = "<group>"; };
+		05DA93F91CDE05D900DEE384 /* ZDTagLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTagLayout.h; sourceTree = "<group>"; };
+		05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTagLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		059007F81C09FDA0008D3920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059008111C09FDA1008D3920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0590081C1C09FDA1008D3920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		059007F21C09FDA0008D3920 = {
+			isa = PBXGroup;
+			children = (
+				059007FD1C09FDA0008D3920 /* ZDCollectionViewSample */,
+				059008171C09FDA1008D3920 /* ZDCollectionViewSampleTests */,
+				059008221C09FDA1008D3920 /* ZDCollectionViewSampleUITests */,
+				059007FC1C09FDA0008D3920 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		059007FC1C09FDA0008D3920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				059007FB1C09FDA0008D3920 /* ZDCollectionViewSample.app */,
+				059008141C09FDA1008D3920 /* ZDCollectionViewSampleTests.xctest */,
+				0590081F1C09FDA1008D3920 /* ZDCollectionViewSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		059007FD1C09FDA0008D3920 /* ZDCollectionViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				05DA93EF1CDE057100DEE384 /* ZDLayout */,
+				05DA93DC1CDE051500DEE384 /* Controller */,
+				05DA93E51CDE051500DEE384 /* Views */,
+				059008011C09FDA0008D3920 /* AppDelegate.h */,
+				059008021C09FDA0008D3920 /* AppDelegate.m */,
+				059008071C09FDA0008D3920 /* Main.storyboard */,
+				0590080A1C09FDA0008D3920 /* Assets.xcassets */,
+				0590080C1C09FDA0008D3920 /* LaunchScreen.storyboard */,
+				0590080F1C09FDA0008D3920 /* Info.plist */,
+				059007FE1C09FDA0008D3920 /* Supporting Files */,
+			);
+			path = ZDCollectionViewSample;
+			sourceTree = "<group>";
+		};
+		059007FE1C09FDA0008D3920 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				059007FF1C09FDA0008D3920 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		059008171C09FDA1008D3920 /* ZDCollectionViewSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				059008181C09FDA1008D3920 /* ZDCollectionViewSampleTests.m */,
+				0590081A1C09FDA1008D3920 /* Info.plist */,
+			);
+			path = ZDCollectionViewSampleTests;
+			sourceTree = "<group>";
+		};
+		059008221C09FDA1008D3920 /* ZDCollectionViewSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				059008231C09FDA1008D3920 /* ZDCollectionViewSampleUITests.m */,
+				059008251C09FDA1008D3920 /* Info.plist */,
+			);
+			path = ZDCollectionViewSampleUITests;
+			sourceTree = "<group>";
+		};
+		05DA93DC1CDE051500DEE384 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05DA93DD1CDE051500DEE384 /* CircleCollectionViewController.h */,
+				05DA93DE1CDE051500DEE384 /* CircleCollectionViewController.m */,
+				05DA93DF1CDE051500DEE384 /* LineCollectionViewController.h */,
+				05DA93E01CDE051500DEE384 /* LineCollectionViewController.m */,
+				05DA93E11CDE051500DEE384 /* TagCollectionViewController.h */,
+				05DA93E21CDE051500DEE384 /* TagCollectionViewController.m */,
+				05DA93E31CDE051500DEE384 /* ZDManagerController.h */,
+				05DA93E41CDE051500DEE384 /* ZDManagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05DA93E51CDE051500DEE384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05DA93E61CDE051500DEE384 /* Cell */,
+				05DA93E91CDE051500DEE384 /* View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05DA93E61CDE051500DEE384 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05DA93E71CDE051500DEE384 /* CircleCell.h */,
+				05DA93E81CDE051500DEE384 /* CircleCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		05DA93E91CDE051500DEE384 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05DA93EF1CDE057100DEE384 /* ZDLayout */ = {
+			isa = PBXGroup;
+			children = (
+				05DA93F01CDE057100DEE384 /* CircleLayout.h */,
+				05DA93F11CDE057100DEE384 /* CircleLayout.m */,
+				05DA93F21CDE057100DEE384 /* LineLayout.h */,
+				05DA93F31CDE057100DEE384 /* LineLayout.m */,
+				05DA93F61CDE05C000DEE384 /* ZDWaterFlowLayout.h */,
+				05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */,
+				05DA93F91CDE05D900DEE384 /* ZDTagLayout.h */,
+				05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */,
+			);
+			path = ZDLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		059007FA1C09FDA0008D3920 /* ZDCollectionViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059008281C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSample" */;
+			buildPhases = (
+				059007F71C09FDA0008D3920 /* Sources */,
+				059007F81C09FDA0008D3920 /* Frameworks */,
+				059007F91C09FDA0008D3920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZDCollectionViewSample;
+			productName = ZDCollectionViewSample;
+			productReference = 059007FB1C09FDA0008D3920 /* ZDCollectionViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		059008131C09FDA1008D3920 /* ZDCollectionViewSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0590082B1C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSampleTests" */;
+			buildPhases = (
+				059008101C09FDA1008D3920 /* Sources */,
+				059008111C09FDA1008D3920 /* Frameworks */,
+				059008121C09FDA1008D3920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				059008161C09FDA1008D3920 /* PBXTargetDependency */,
+			);
+			name = ZDCollectionViewSampleTests;
+			productName = ZDCollectionViewSampleTests;
+			productReference = 059008141C09FDA1008D3920 /* ZDCollectionViewSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0590081E1C09FDA1008D3920 /* ZDCollectionViewSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0590082E1C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSampleUITests" */;
+			buildPhases = (
+				0590081B1C09FDA1008D3920 /* Sources */,
+				0590081C1C09FDA1008D3920 /* Frameworks */,
+				0590081D1C09FDA1008D3920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				059008211C09FDA1008D3920 /* PBXTargetDependency */,
+			);
+			name = ZDCollectionViewSampleUITests;
+			productName = ZDCollectionViewSampleUITests;
+			productReference = 0590081F1C09FDA1008D3920 /* ZDCollectionViewSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		059007F31C09FDA0008D3920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Zero.D.Saber;
+				TargetAttributes = {
+					059007FA1C09FDA0008D3920 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					059008131C09FDA1008D3920 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 059007FA1C09FDA0008D3920;
+					};
+					0590081E1C09FDA1008D3920 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 059007FA1C09FDA0008D3920;
+					};
+				};
+			};
+			buildConfigurationList = 059007F61C09FDA0008D3920 /* Build configuration list for PBXProject "ZDCollectionViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 059007F21C09FDA0008D3920;
+			productRefGroup = 059007FC1C09FDA0008D3920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				059007FA1C09FDA0008D3920 /* ZDCollectionViewSample */,
+				059008131C09FDA1008D3920 /* ZDCollectionViewSampleTests */,
+				0590081E1C09FDA1008D3920 /* ZDCollectionViewSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		059007F91C09FDA0008D3920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0590080E1C09FDA0008D3920 /* LaunchScreen.storyboard in Resources */,
+				0590080B1C09FDA0008D3920 /* Assets.xcassets in Resources */,
+				059008091C09FDA0008D3920 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059008121C09FDA1008D3920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0590081D1C09FDA1008D3920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		059007F71C09FDA0008D3920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DA93F51CDE057100DEE384 /* LineLayout.m in Sources */,
+				05DA93EB1CDE051500DEE384 /* LineCollectionViewController.m in Sources */,
+				05DA93F41CDE057100DEE384 /* CircleLayout.m in Sources */,
+				059008031C09FDA0008D3920 /* AppDelegate.m in Sources */,
+				05DA93EC1CDE051500DEE384 /* TagCollectionViewController.m in Sources */,
+				05DA93EA1CDE051500DEE384 /* CircleCollectionViewController.m in Sources */,
+				05DA93EE1CDE051500DEE384 /* CircleCell.m in Sources */,
+				05DA93FB1CDE05D900DEE384 /* ZDTagLayout.m in Sources */,
+				059008001C09FDA0008D3920 /* main.m in Sources */,
+				05DA93ED1CDE051500DEE384 /* ZDManagerController.m in Sources */,
+				05DA93F81CDE05C000DEE384 /* ZDWaterFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059008101C09FDA1008D3920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059008191C09FDA1008D3920 /* ZDCollectionViewSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0590081B1C09FDA1008D3920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059008241C09FDA1008D3920 /* ZDCollectionViewSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		059008161C09FDA1008D3920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059007FA1C09FDA0008D3920 /* ZDCollectionViewSample */;
+			targetProxy = 059008151C09FDA1008D3920 /* PBXContainerItemProxy */;
+		};
+		059008211C09FDA1008D3920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059007FA1C09FDA0008D3920 /* ZDCollectionViewSample */;
+			targetProxy = 059008201C09FDA1008D3920 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		059008071C09FDA0008D3920 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				059008081C09FDA0008D3920 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0590080C1C09FDA0008D3920 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0590080D1C09FDA0008D3920 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		059008261C09FDA1008D3920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		059008271C09FDA1008D3920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		059008291C09FDA1008D3920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZDCollectionViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0590082A1C09FDA1008D3920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZDCollectionViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0590082C1C09FDA1008D3920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZDCollectionViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDCollectionViewSample.app/ZDCollectionViewSample";
+			};
+			name = Debug;
+		};
+		0590082D1C09FDA1008D3920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZDCollectionViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDCollectionViewSample.app/ZDCollectionViewSample";
+			};
+			name = Release;
+		};
+		0590082F1C09FDA1008D3920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZDCollectionViewSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZDCollectionViewSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		059008301C09FDA1008D3920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZDCollectionViewSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZD.ZDCollectionViewSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZDCollectionViewSample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		059007F61C09FDA0008D3920 /* Build configuration list for PBXProject "ZDCollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059008261C09FDA1008D3920 /* Debug */,
+				059008271C09FDA1008D3920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		059008281C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059008291C09FDA1008D3920 /* Debug */,
+				0590082A1C09FDA1008D3920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0590082B1C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0590082C1C09FDA1008D3920 /* Debug */,
+				0590082D1C09FDA1008D3920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0590082E1C09FDA1008D3920 /* Build configuration list for PBXNativeTarget "ZDCollectionViewSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0590082F1C09FDA1008D3920 /* Debug */,
+				059008301C09FDA1008D3920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 059007F31C09FDA0008D3920 /* Project object */;
+}

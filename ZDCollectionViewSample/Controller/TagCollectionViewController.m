@@ -7,14 +7,15 @@
 //
 
 #import "TagCollectionViewController.h"
+#import "ZDTagLayout.h"
 
-@interface TagCollectionViewController ()
+@interface TagCollectionViewController ()<UICollectionViewDelegateFlowLayout>
 
 @end
 
 @implementation TagCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"TagCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +24,12 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
+    self.collectionView.collectionViewLayout = ({
+        ZDTagLayout *tagLayout = [[ZDTagLayout alloc] init];
+        tagLayout.minimumInteritemSpacing = 20;
+        tagLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        tagLayout;
+    });
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
@@ -63,6 +70,13 @@ static NSString * const reuseIdentifier = @"Cell";
     
     return cell;
 }
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return (CGSize){66, 30};
+}
+
 
 #pragma mark <UICollectionViewDelegate>
 

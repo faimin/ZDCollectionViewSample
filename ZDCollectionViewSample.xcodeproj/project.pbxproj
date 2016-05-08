@@ -168,14 +168,14 @@
 		05DA93DC1CDE051500DEE384 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05DA93E31CDE051500DEE384 /* ZDManagerController.h */,
+				05DA93E41CDE051500DEE384 /* ZDManagerController.m */,
 				05DA93DD1CDE051500DEE384 /* CircleCollectionViewController.h */,
 				05DA93DE1CDE051500DEE384 /* CircleCollectionViewController.m */,
 				05DA93DF1CDE051500DEE384 /* LineCollectionViewController.h */,
 				05DA93E01CDE051500DEE384 /* LineCollectionViewController.m */,
 				05DA93E11CDE051500DEE384 /* TagCollectionViewController.h */,
 				05DA93E21CDE051500DEE384 /* TagCollectionViewController.m */,
-				05DA93E31CDE051500DEE384 /* ZDManagerController.h */,
-				05DA93E41CDE051500DEE384 /* ZDManagerController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

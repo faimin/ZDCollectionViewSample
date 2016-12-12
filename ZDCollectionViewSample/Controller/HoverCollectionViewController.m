@@ -1,38 +1,39 @@
 //
-//  TagCollectionViewController.m
+//  HoverCollectionViewController.m
 //  ZDCollectionViewSample
 //
-//  Created by 符现超 on 16/2/2.
-//  Copyright © 2016年 Fate.D.Bourne. All rights reserved.
+//  Created by 符现超 on 2016/12/12.
+//  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 
-#import "TagCollectionViewController.h"
-#import "ZDTagLayout.h"
+#import "HoverCollectionViewController.h"
+#import "ZDHoverLayout.h"
+#import "HoverCell.h"
 
-@interface TagCollectionViewController ()<UICollectionViewDelegateFlowLayout>
+@interface HoverCollectionViewController ()
 
 @end
 
-@implementation TagCollectionViewController
+@implementation HoverCollectionViewController
 
-static NSString * const reuseIdentifier = @"TagCell";
+static NSString * const reuseIdentifier = @"HoverCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
+
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Register cell classes
     self.collectionView.collectionViewLayout = ({
-        ZDTagLayout *tagLayout = [[ZDTagLayout alloc] init];
-        tagLayout.minimumInteritemSpacing = 20;
-        tagLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        tagLayout;
+        ZDHoverLayout *layout = [[ZDHoverLayout alloc] init];
+        // 叠加效果需要把space设置为负数
+        layout.minimumLineSpacing = -20;
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        layout.itemSize = CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds), 80);
+        layout;
     });
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+
+    // Register cell classes
+    [self.collectionView registerClass:[HoverCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,39 +41,21 @@ static NSString * const reuseIdentifier = @"TagCell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return 100;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
+    HoverCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    cell.label.text = [NSString stringWithFormat:@"😀😀😀 %zd", indexPath.row + 1];
     
     return cell;
-}
-
-#pragma mark - UICollectionViewDelegateFlowLayout
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return (CGSize){66, 30};
 }
 
 

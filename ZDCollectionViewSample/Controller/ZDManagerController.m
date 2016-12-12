@@ -42,7 +42,7 @@
 - (NSArray *)dataArray
 {
     if (!_dataArray) {
-        _dataArray = @[@"Line", @"Circle", @"Tag"];
+        _dataArray = @[@"Line", @"Circle", @"Tag", @"Hover"];
     }
     return _dataArray;
 }
@@ -74,6 +74,9 @@
             break;
         case 2:
             [self.navigationController pushViewController:[self viewcontrollerWithIdentifier:@"TagCollectionViewController"] animated:YES];
+            break;
+        case 3:
+            [self.navigationController pushViewController:[self viewcontrollerWithIdentifier:@"HoverCollectionViewController"] animated:YES];
             break;
         default:
             break;

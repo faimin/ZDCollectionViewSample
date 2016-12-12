@@ -23,6 +23,9 @@
 		05DA93F51CDE057100DEE384 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93F31CDE057100DEE384 /* LineLayout.m */; };
 		05DA93F81CDE05C000DEE384 /* ZDWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */; };
 		05DA93FB1CDE05D900DEE384 /* ZDTagLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */; };
+		BC9160C71DFE4F0A005A5D5B /* ZDHoverLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9160C61DFE4F0A005A5D5B /* ZDHoverLayout.m */; };
+		BC9160CA1DFE5135005A5D5B /* HoverCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9160C91DFE5135005A5D5B /* HoverCollectionViewController.m */; };
+		BC9160CD1DFE552F005A5D5B /* HoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9160CC1DFE552F005A5D5B /* HoverCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,12 @@
 		05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWaterFlowLayout.m; sourceTree = "<group>"; };
 		05DA93F91CDE05D900DEE384 /* ZDTagLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTagLayout.h; sourceTree = "<group>"; };
 		05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTagLayout.m; sourceTree = "<group>"; };
+		BC9160C51DFE4F0A005A5D5B /* ZDHoverLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDHoverLayout.h; sourceTree = "<group>"; };
+		BC9160C61DFE4F0A005A5D5B /* ZDHoverLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDHoverLayout.m; sourceTree = "<group>"; };
+		BC9160C81DFE5135005A5D5B /* HoverCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoverCollectionViewController.h; sourceTree = "<group>"; };
+		BC9160C91DFE5135005A5D5B /* HoverCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoverCollectionViewController.m; sourceTree = "<group>"; };
+		BC9160CB1DFE552F005A5D5B /* HoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoverCell.h; sourceTree = "<group>"; };
+		BC9160CC1DFE552F005A5D5B /* HoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoverCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +185,8 @@
 				05DA93E01CDE051500DEE384 /* LineCollectionViewController.m */,
 				05DA93E11CDE051500DEE384 /* TagCollectionViewController.h */,
 				05DA93E21CDE051500DEE384 /* TagCollectionViewController.m */,
+				BC9160C81DFE5135005A5D5B /* HoverCollectionViewController.h */,
+				BC9160C91DFE5135005A5D5B /* HoverCollectionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +205,8 @@
 			children = (
 				05DA93E71CDE051500DEE384 /* CircleCell.h */,
 				05DA93E81CDE051500DEE384 /* CircleCell.m */,
+				BC9160CB1DFE552F005A5D5B /* HoverCell.h */,
+				BC9160CC1DFE552F005A5D5B /* HoverCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -216,6 +229,8 @@
 				05DA93F71CDE05C000DEE384 /* ZDWaterFlowLayout.m */,
 				05DA93F91CDE05D900DEE384 /* ZDTagLayout.h */,
 				05DA93FA1CDE05D900DEE384 /* ZDTagLayout.m */,
+				BC9160C51DFE4F0A005A5D5B /* ZDHoverLayout.h */,
+				BC9160C61DFE4F0A005A5D5B /* ZDHoverLayout.m */,
 			);
 			path = ZDLayout;
 			sourceTree = "<group>";
@@ -350,13 +365,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9160CD1DFE552F005A5D5B /* HoverCell.m in Sources */,
 				05DA93F51CDE057100DEE384 /* LineLayout.m in Sources */,
 				05DA93EB1CDE051500DEE384 /* LineCollectionViewController.m in Sources */,
+				BC9160C71DFE4F0A005A5D5B /* ZDHoverLayout.m in Sources */,
 				05DA93F41CDE057100DEE384 /* CircleLayout.m in Sources */,
 				059008031C09FDA0008D3920 /* AppDelegate.m in Sources */,
 				05DA93EC1CDE051500DEE384 /* TagCollectionViewController.m in Sources */,
 				05DA93EA1CDE051500DEE384 /* CircleCollectionViewController.m in Sources */,
 				05DA93EE1CDE051500DEE384 /* CircleCell.m in Sources */,
+				BC9160CA1DFE5135005A5D5B /* HoverCollectionViewController.m in Sources */,
 				05DA93FB1CDE05D900DEE384 /* ZDTagLayout.m in Sources */,
 				059008001C09FDA0008D3920 /* main.m in Sources */,
 				05DA93ED1CDE051500DEE384 /* ZDManagerController.m in Sources */,
